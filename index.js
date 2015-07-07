@@ -1,6 +1,5 @@
 var Decompress = require('decompress');
 var plist = require('simple-plist');
-
 var fs = require('fs');
 
 module.exports = function(filePath, cb){
@@ -18,7 +17,10 @@ module.exports = function(filePath, cb){
               if(err) {
                   return cb(err, null);
               }
-              var data = plist.readFileSync(__dirname + '/temp-'+timestamp+'.plist');
+              var data = {
+                ipa: fs.statSync(filePath),
+                plist: plist.readFileSync(__dirname + '/temp-'+timestamp+'.plist')
+              }
               cb(null, data);
               fs.unlinkSync(__dirname + '/temp-'+timestamp+'.plist');
           });
