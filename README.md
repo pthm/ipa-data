@@ -1,10 +1,10 @@
-#ipa-data
-A node module for reading metadata from an IPA file
+# ipa-data
+A node module for reading metadata from an IPA file  
 
 `npm install ipa-data`
 
-##Usage
-````javascript
+## Usage
+```javascript
 var ipaData = require('ipa-data')
 
 ipaData('path/to/ipa.ipa', function(err, metadata){
@@ -14,4 +14,4 @@ ipaData('path/to/ipa.ipa', function(err, metadata){
   console.log(metadata);
 })
 
-````
+```
