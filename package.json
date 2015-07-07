@@ -16,5 +16,14 @@
   "dependencies": {
     "decompress": "^2.3.0",
     "simple-plist": "0.0.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pthm/ipa-data.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pthm/ipa-data/issues"
+  },
+  "homepage": "https://github.com/pthm/ipa-data#readme"
 }
